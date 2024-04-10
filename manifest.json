@@ -1,0 +1,49 @@
+{
+  "action": {
+    "default_icon": {
+      "128": "icon-gray128.png",
+      "16": "icon-gray16.png",
+      "48": "icon-gray48.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "js": ["contentscript.js"],
+      "matches": ["https://*.instagram.com/*"],
+      "run_at": "document_start"
+    }
+  ],
+  "description": "Stalk Instagram Stories anonymously (Chrome Extension)",
+  "host_permissions": [
+    "https://*.instagram.com/*",
+    "https://*.google-analytics.com/*"
+  ],
+  "icons": {
+    "128": "icon128.png",
+    "16": "icon16.png",
+    "48": "icon48.png"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl2iAo1cT48r8Nt/flhuEsmlhvCoMeihk4knMwyPGom26XJWUk7XHe0K+x66UUBkJ9m4dLTfuUNLHZBhuMr7gSPmKQY/leVW0W3jQCjXbnviJVj2ZIiT/K2nYXsuJuzdZ0hDM1T+nh8NjwLQXnfHS1scVvUR507n7jaB5ZcJ0dMnZKPByK7xJjjmW0fozUBykQ0G4FfFUPmQbXnxqmheLYEU/xk49V4GlTpU22CNq0fhKBLYW3zDMSnW4rhU0C3Rq9NsxE9QmptfDIGYgYmVdAKAFu9hUJwmIslEzesmXR0PRfYCsIzZPZ94epDvrI8FmOSnvX/VMd4O2a/u4kvEgVQIDAQAB",
+  "manifest_version": 3,
+  "name": "Instagram - Stalk Story",
+  "permissions": [
+    "storage",
+    "alarms",
+    "identity",
+    "identity.email",
+    "tabs",
+    "cookies"
+  ],
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "version": "2.4",
+  "web_accessible_resources": [
+    {
+      "matches": ["https://*.instagram.com/*"],
+      "resources": ["script.js", "utils.js"]
+    }
+  ]
+}

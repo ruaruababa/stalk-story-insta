@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bulma.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome.min.css">
+    <link rel="stylesheet" href="brands.css">
+    <script src="fontawesome.min.js"></script>
+    <script src="brands.js"></script>
+    <script src="utils.js"></script>
+</head>
+<body>
+<div class="popup">
+    <div class="columns is-mobile">
+        <div class="column is-three-quarters">
+            <span class="icon-text">
+              <span class="icon">
+                <i class="fa-brands fa-instagram"></i>
+              </span>
+              <span id="enable-label">
+                Ghostify is disabled
+                  <br>
+              </span>
+            </span>
+        </div>
+        <div class="column">
+            <label class="switch">
+                <input value="checked" type="checkbox" id="enable-toggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+
+    <div id="open-insta-section" class="is-hidden">
+        </br>
+        <p style="text-align: center">Now go to Instagram website to view stories anonymously</br> (You may need to log
+            in)
+        </p>
+        </br>
+        <div class="field is-grouped">
+            <p class="control is-expanded">
+            </p>
+            <a target="_blank" class="button is-info"
+               href="https://instagram.com">
+                Open Instagram </a></label>
+            <p class="control is-expanded">
+            </p>
+        </div>
+        </br>
+    </div>
+    <div id="subscription-section" class="columns is-mobile is-hidden">
+        <div class="column">
+            <hr>Premium License
+            <label style="color: red">Unlimited stalk time</label>
+            </br>
+            </br>
+            <label>Get a premium license with as little as 4.99$ and use Ghostify without limit!</label>
+            </br>
+            </br>
+            <a id="buy-button" target="_blank" class="button is-info">
+                Buy Premium License </a>
+            <br/>
+            <hr>
+            <label>
+                Have a license already?
+            </label>
+            </br>
+            </br>
+            <div class="field is-grouped">
+                <p class="control is-expanded">
+                    <input id="license-input" class="input" type="text" placeholder="License key">
+                    <span id="error" class="has-text-danger"></span>
+                </p>
+                <p class="control">
+                    <a id="submit-license" class="button is-info" disabled="true">
+                        Submit
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <span id="subscription-plan-label" class="content has-text-grey has-text-weight-light is-small is-hidden"></span>
+    <br />
+    <a target="_blank" style="font-size: small" href="https://shop.getghostify.com/billing">Manage subscriptions</a>
+    <hr />
+    <!-- <span class="icon-text">
+              <span class="icon star">
+                🌟
+              </span>
+              <span >
+                    <a href="https://chrome.google.com/webstore/detail/ghostify-view-instagram-s/ajkkboilpcbfgojiochgfbeblbpcgpga"
+                       target="_blank"
+                       style="color: green">Rate us on Chrome web store</a>
+                  <br>
+              </span>
+            </span> -->
+
+</div>
+<script src="popup.js"></script>
+</body>
+</html>
