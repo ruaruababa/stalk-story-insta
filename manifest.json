@@ -19,6 +19,7 @@
   ],
   "description": "Stalk Instagram Stories anonymously (Chrome Extension)",
   "host_permissions": [
+    "https://*.getghostify.com/*",
     "https://*.instagram.com/*",
     "https://*.google-analytics.com/*"
   ],

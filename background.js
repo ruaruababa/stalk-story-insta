@@ -34,7 +34,7 @@ chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
 // });
 
 chrome.runtime.onStartup.addListener(() => {
-  enableExtention(false);
+  enableExtention(true);
   console.log('disable extention for a clean start');
 });
 
